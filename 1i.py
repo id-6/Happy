@@ -1,4 +1,12 @@
-mport threading
+import asyncio
+import json
+import os
+import random
+import string
+from datetime import datetime, timedelta
+from telethon import TelegramClient, events, types, Button, functions
+from telethon.errors import SessionPasswordNeededError, FloodWaitError
+import threading
 
 # ===== إعدادات البوت - يجب تحديثها =====
 API_ID = 29885460  # ضع API_ID الخاص بك
